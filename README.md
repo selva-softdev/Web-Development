@@ -15,7 +15,7 @@ It's satisfying to see my work come to life.
   - React Web Development on [Odin School](https://go.odinschool.com/myaccount/#/classes)
 - 💬 Feel free to ask me about anything, I am happy to help!
 - 📬 How to reach me: [selvasundari8729@gmail.com](mailto:selvasundari8729@gmail.com)
-- 📝 [Resume].
+- 📝 [Resume](https://drive.google.com/file/d/1kpLcpBsJUUOjlTpk7-jQO6x1ZmXmx0CR/view).
 - 💪 My code will be available in :<a href="https://github.com/AswinBarath" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="AswinBarath" height="30" width="40" /></a>
 
 ---
