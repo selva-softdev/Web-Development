@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Getting HTML elements by Id</title>
+</head>
+<body>
+    <h1 id="welcome_msg"></h1>
+
+    <div class="main_div">
+        <h2>Celsius to Farenheit</h2>
+        <label>Enter Celsius</label>
+        <input type="text" id="celsius">
+        <div>
+            <button type="button" class="button" onclick="convert()">Convert</button>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    
+    <script>
+        //to control entire html page structure, use DOM(Document Object Model)
+        // document --> results entire html document
+
+        //to control html tags(elements) inside script, 
+        //set id for that tag
+        //using 'getElementById', --> (result) In console, view document and the element of this id automatically gets updated
+        let h1_msg = document.getElementById("welcome_msg");
+        h1_msg.innerHTML = 'Welcome to My Javascript Course';
+
+        //example
+        function convert(){
+            let user_celsius = Number(document.getElementById("celsius").value);
+            let converion_result = (9/5 * user_celsius) + 32;
+            let farenheit = document.getElementById("result");
+            farenheit.innerHTML = 'Farenheit is '+ converion_result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.flex-container{
+    display: flex;
+    width: 50%;
+    background-color: lightgray;
+}
+.flex-items{
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+.flex-start{
+    justify-content: flex-start;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.center{
+    justify-content: center;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+.height-flex-container{
+    display: flex;
+    width: 100%;
+    background-color: lightgray;
+}
+.fixed-height{
+    height: 200px;
+}
+.min-height{
+    min-height: 50px;
+}
+.max-height{
+    max-height: 300px;
+}
+
+.overflow{
+    width:30%;
+    height:100px;
+}
+.hidden{
+    overflow: hidden;
+}
+.xy{
+    height: 200px;
+    overflow-x: scroll;
+    overflow-y: auto;
+}
+.scroll{
+    overflow: scroll;
+}
+.auto{
+    overflow: auto;
+}
+.visible{
+    overflow:visible;
+}

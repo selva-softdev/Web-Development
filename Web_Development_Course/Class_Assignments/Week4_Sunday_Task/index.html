@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Display Properties</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ------------Task------------
+        Display "Flex" property with "Justify-content"
+        Container with "fixed heigth", "min-height" and "max-height"
+        Overflow property 
+    -->
+
+    <h1>Display Flex property - "Justify-content":</h1>
+    <ul>
+        <li>
+            <p>The justify-content property aligns the flexible container's items on the <strong>main-axis (horizontally)</strong>.</p>
+        </li>
+        <li>
+            <p>Default value: <strong>"flex-start"</strong>.</p>
+        </li>
+    </ul>
+    
+   <ol>
+        <li>
+            <h2>Justify-content:"Flex-start"</h2>
+            <p>Items are positioned at the <strong>beginning</strong> of the container.</p>
+            <h3>Example:</h3>
+            <div class="flex-container flex-start">
+                <div class="flex-items" style="background-color: khaki;">Item 1</div>
+                <div class="flex-items" style="background-color: pink;">Item 2</div>
+                <div class="flex-items" style="background-color: lightgreen;">Item 3</div>
+            </div>
+        </li>
+        <li>
+            <h2>Justify-content:"Flex-end"</h2>
+            <p>Items are positioned at the <strong>end</strong> of the container.</p>
+            <h3>Example:</h3>
+            <div class="flex-container flex-end">
+                <div class="flex-items" style="background-color: khaki;">Item 1</div>
+                <div class="flex-items" style="background-color: pink;">Item 2</div>
+                <div class="flex-items" style="background-color: lightgreen;">Item 3</div>
+            </div>
+        </li>
+        <li>
+            <h2>Justify-content:"Center"</h2>
+            <p>Items are positioned at the <strong>center</strong> of the container.</p>
+            <h3>Example:</h3>
+            <div class="flex-container center">
+                <div class="flex-items" style="background-color: khaki;">Item 1</div>
+                <div class="flex-items" style="background-color: pink;">Item 2</div>
+                <div class="flex-items" style="background-color: lightgreen;">Item 3</div>
+            </div>
+        </li>
+        <li>
+            <h2>Justify-content:"Space-around"</h2>
+            <p>Items will have space <strong>before, between</strong>, and <strong>after</strong> them.</p>
+            <h3>Example:</h3>
+            <div class="flex-container space-around">
+                <div class="flex-items" style="background-color: khaki;">Item 1</div>
+                <div class="flex-items" style="background-color: pink;">Item 2</div>
+                <div class="flex-items" style="background-color: lightgreen;">Item 3</div>
+            </div>
+        </li>
+        <li>
+            <h2>Justify-content:"Space-between"</h2>
+            <p>Items will have space <strong>between</strong> them.</p>
+            <h3>Example:</h3>
+            <div class="flex-container space-between">
+                <div class="flex-items" style="background-color: khaki;">Item 1</div>
+                <div class="flex-items" style="background-color: pink;">Item 2</div>
+                <div class="flex-items" style="background-color: lightgreen;">Item 3</div>
+            </div>
+        </li>
+        <li>
+            <h2>Justify-content:"Space-evenly"</h2>
+            <p>Items will have <strong>equal</strong> space around them.</p>
+            <h3>Example:</h3>
+            <div class="flex-container space-evenly">
+                <div class="flex-items" style="background-color: khaki;">Item 1</div>
+                <div class="flex-items" style="background-color: pink;">Item 2</div>
+                <div class="flex-items" style="background-color: lightgreen;">Item 3</div>
+            </div>
+        </li>
+        <li>
+            <h2>Justify-self:</h2>
+            <ul>
+                <li><p>The justify-self property <strong>specifies the alignment</strong> for the <strong>selected item horizontally(x-axis)</strong> inside a grid container.</p></li>
+                <li>The justify-self property <strong>aligns a grid item</strong> within its grid cell in the inline direction.</li>
+                <li>
+                    <p>Justify-self values:</p>
+                    <ul>
+                        <li>Left</li>
+                        <li>Right</li>
+                        <li>Start</li>
+                        <li>End</li>
+                        <li>Flex-start</li>
+                        <li>Flex-end</li>
+                        <li>Stretch</li>
+                        <li>Center</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+   </ol>
+
+   <h1>Container-items with different height:</h1>
+   <div class="height-flex-container space-around">
+        <div>
+            <h4>Content within Fixed-height(200px)</h4>
+            <div class="flex-items fixed-height" style="background-color: rgb(62, 134, 132);">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, eveniet.
+            </div>
+        </div>
+        <div>
+            <h4>Content exceeds Fixed-height(200px)</h4>
+            <div class="flex-items fixed-height" style="background-color: rgb(62, 134, 132);">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ex cum odit amet? Maiores dolorum voluptates temporibus, quidem, distinctio autem modi adipisci rerum, ratione consequuntur recusandae illo tempore consectetur vero?
+            </div>
+        </div>
+
+        <div>
+            <h4>Content within Min-height(50px)</h4>
+            <div class="flex-items min-height" style="background-color: rgb(180, 180, 61);">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </div>
+        </div>
+        <div>
+            <h4>More content with Min-height(50px)</h4>
+            <div class="flex-items min-height" style="background-color: rgb(180, 180, 61);">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et id expedita nostrum excepturi maxime possimus esse labore, in cum doloribus aliquam modi adipisci rerum, ratione consequuntur recusandae illo tempore consectetur vero?
+            </div>
+        </div>
+        
+        <div>
+            <h4>Content within Max-height(300px)</h4>
+            <div class="flex-items max-height" style="background-color: lightslategrey;">
+                Lorem ipsum dolor sit amet consectetur,
+            </div>
+        </div>
+        <div>
+            <h4>Content exceeds Max-height(300px)</h4>
+            <div class="flex-items max-height" style="background-color: lightslategrey;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, illum architecto numquam voluptates id consectetur porro, beatae neque accusantium iure voluptatibus itaque necessitatibus molestiae! Tempore accusamus?
+            </div>
+        </div>
+   </div><br><br>
+
+   <h1>Overflow property:</h1>
+   <ul>
+        <li>
+            <p>The overflow property specifies whether to <strong>clip</strong> the content or to add <strong>scrollbars</strong> when the content of an element is too big to fit in the specified area.</p>
+        </li>
+        <li>
+            <p>Default value: <strong>visible</strong></p>
+        </li>
+   </ul>
+   <ol>
+        <li>
+            <h2>Overflow : "Hidden"</h2>
+            <p>The overflow is <strong>clipped</strong>, and the rest of the content will be <strong>invisible</strong>.</p>
+            <h3>Example:</h3>
+            <div class="overflow hidden" style="background-color: rgb(193, 176, 221)">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis perspiciatis quam mollitia ducimus, provident explicabo repudiandae maxime laborum minima, quis velit sed, iusto perferendis neque repellat quisquam dolore rem deleniti pariatur! Adipisci voluptate itaque, odio exercitationem delectus numquam non. Corrupti omnis quas, dolorem corporis earum consequatur id beatae incidunt perferendis inventore esse non fugit ab, ratione harum sit dolor. Voluptate voluptas dignissimos quos aperiam illum quibusdam nostrum, itaque asperiores cupiditate placeat unde voluptatum, eaque minus enim explicabo eum eius minima eligendi a deleniti nisi molestiae quia alias? Minima placeat laboriosam mollitia nostrum, exercitationem id ipsa modi adipisci voluptate quas, rerum provident maxime corrupti labore tempore eos eveniet suscipit culpa illum molestias incidunt quaerat eum commodi iure. Maxime adipisci vitae obcaecati esse animi blanditiis officia consequuntur. Maxime, deleniti? Nobis facere hic magnam saepe incidunt expedita, quisquam voluptatum odit aliquid explicabo ipsam quam aperiam, autem quaerat tempore velit molestias alias consectetur! Voluptatem.
+            </div>
+        </li>
+        <li>
+            <h2>Overflow : "overflow-x and overflow-y"</h2>
+            <p><strong>Overflow-x</strong> specifies what to do with the <strong>left/right edges</strong> of the content.</p>
+            <p><strong>Overflow-y</strong> specifies what to do with the <strong>top/bottom edges</strong> of the content.</p>
+            <h3>Example:</h3>
+            <div class="overflow xy" style="background-color: rgb(176, 218, 221)">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque assumenda fugiat enim quis, asperiores placeat eligendi eum, obcaecati ratione quasi iusto corrupti sunt consectetur unde ea accusamus ad. 
+                <br><img src="https://www.onthemap.com/wp-content/uploads/2020/08/web-designer-near.jpg" width="600px">
+            </div>
+        </li>
+        <li>
+            <h2>Overflow : "Scroll"</h2>
+            <p>The overflow is <strong>clipped</strong>, and a <strong>scrollbar</strong> is added to see the rest of the content.</p>
+            <h3>Example:</h3>
+            <div class="overflow scroll" style="background-color: rgb(221, 193, 176)">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque assumenda fugiat enim quis, asperiores placeat eligendi eum, obcaecati ratione quasi iusto corrupti sunt consectetur unde ea accusamus ad. Labore debitis omnis unde modi quam! Consequatur delectus repellendus at placeat nesciunt ea mollitia, perferendis veniam dolores voluptatem modi tenetur sequi quos necessitatibus, eius esse illo quaerat culpa eligendi, suscipit labore? Laborum amet ratione ea corrupti aperiam, ipsum officia praesentium, velit numquam facere libero sapiente. Minima, deserunt ipsam sapiente distinctio sed magnam labore, dolorum nam, veniam quasi voluptate tempore molestias voluptas consequatur vel in blanditiis fugit earum. Voluptatibus dolor quod, velit enim architecto natus delectus pariatur quia culpa quisquam aspernatur quis id officia exercitationem, eaque qui laborum, deleniti consectetur asperiores unde. Nemo labore porro totam impedit culpa dolore quaerat eligendi recusandae fugit dolor! Nostrum explicabo inventore deleniti fuga necessitatibus sit sapiente voluptate nemo tenetur. Molestiae optio pariatur fuga. Facere, modi cumque.
+            </div>
+        </li>
+        <li>
+            <h2>Overflow : "Auto"</h2>
+            <p>Similar to <strong>scroll</strong>, but it adds scrollbars only when necessary.</p>
+            <h3>Example:</h3>
+            <div class="overflow auto" style="background-color: rgb(221, 220, 176)">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor ut voluptates omnis quaerat. Neque quam ratione quaerat facere at a dicta sunt! Nam libero ex laudantium ducimus, nisi amet adipisci reprehenderit tempora, inventore iste ratione, alias voluptatum doloremque officiis at veritatis iusto esse vitae. Voluptate, nesciunt. Ea voluptas dolorum quasi laudantium velit magni possimus. Laboriosam iusto nemo error aliquam odio perferendis illum dolorum, laudantium, inventore molestiae mollitia modi expedita in!
+            </div>
+        </li>
+        <li>
+            <h2>Overflow : "Visible"</h2>
+            <p>The overflow is <strong>clipped</strong>, and a <strong>scrollbar</strong> is added to see the rest of the content.</p>
+            <h3>Example:</h3>
+            <div class="overflow visible" style="background-color: rgb(176, 221, 196)">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor ut voluptates omnis quaerat. Neque quam ratione quaerat facere at a dicta sunt! Nam libero ex laudantium ducimus, nisi amet adipisci reprehenderit tempora, inventore iste ratione, alias voluptatum doloremque officiis at veritatis iusto esse vitae. Voluptate, nesciunt. Ea voluptas dolorum quasi laudantium velit magni possimus. Laboriosam iusto nemo error aliquam odio perferendis illum dolorum, laudantium, inventore molestiae mollitia modi expedita in!
+            </div>
+        </li>
+       
+   </ol>
+</body>
+</html>

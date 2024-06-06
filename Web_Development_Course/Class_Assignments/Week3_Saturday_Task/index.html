@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturday Task</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        a[target="_blank"]{
+            background-color: darksalmon;
+        }
+        [title~="Selva"]{
+            border: 3px solid rosybrown;
+        }
+        [class|="para"]{
+            color: crimson;
+        }
+        [class^="line"]{
+            color: rgb(27, 169, 171);
+        }
+        [class$="text"]{
+            color: rgb(102, 18, 206);
+        }
+        [class*="_I"]{
+            color: rgb(172, 203, 139);
+        }
+        input[type="text"] {
+            width: 150px;
+            display: block;
+            margin-bottom: 10px;
+            background-color: yellow;
+        }
+
+        input[type="button"] {
+            width: 80px;
+            margin-left: 35px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        -------------- Task --------------
+            First letter(Bold, Caps, Large font size)
+            Content-Before, After
+            Attribute selector 
+      -->
+
+      <h2>Task:</h2>
+      <h3>First letter with (Bold, Caps, Large font size)</h3>
+      <p><strong style="font-size: 50px;">L</strong>orem ipsum dolor sit amet consectetur adipisicing elit. 
+        Eligendi nihil modi ea ipsa ab beatae quibusdam odit non enim itaque.
+      </p><hr>
+
+      <h3>Adding content to Before and After the text using ':'</h3>
+      <p class="addtext">Welcome</p><hr>
+
+      <h3>Attribute selector</h3>
+      <ul>
+        <li>
+            <h4>'a' tag attribute selector:</h4>
+            <p>Syntax: [attribute="value"]</p>
+            <h5>Example:</h5>
+            <a href="http://www.google.com" target="_blank">Open Google</a>
+            <p>Explanation:<em> The link with target="_blank" gets a "salmon" color background.</em></p>
+        </li>
+
+        <li>
+            <h4>'img' tag attribute selector:</h4>
+            <p>Syntax: [attribute~="value"]</p>
+            <h5>Example:</h5>
+            <img src="/CSS/Images/selva.JPG" alt="Selva image" title="Selva Image" height="300px;">
+            <p>Explanation:<em> All images with the title attribute containing the word "Selva" get a "rosybrown border".</em></p>
+        </li>
+
+        <li>
+            <h4>class attribute selector:</h4>
+            <ol>
+                <li>
+                    <h4>[attribute|="value"]:</h4>
+                    <p> This selector is used to select elements with the specified attribute, whose value can be exactly the specified value, or the specified value followed by a hyphen (-).</p>
+                    <h5>Example:</h5>
+                    <p class="para">Class name ---> para</p>
+                    <p class="para-2">Class name ---> para-2</p>
+                    <p class="para-third">Class name ---> para-three</p>
+                    <p>Explanation:<em> The value has to be a whole word, like class="para", or followed by a hyphen( - ), like class="para-2".</em></p>
+                </li><hr style="width: 30%;">
+
+                <li>
+                    <h4>[attribute^="value"]:</h4>
+                    <p> This selector is used to select elements with the specified attribute, whose value starts with the specified value.</p>
+                    <h5>Example:</h5>
+                    <p class="line">Class name ---> line</p>
+                    <p class="line-2">Class name ---> line-2</p>
+                    <p class="three-line">Class name ---> three-line</p>
+                    <p>Explanation:<em> The value does not has to be a whole word but starts with the word 'line'.</em></p>
+                </li><hr style="width: 30%;">
+
+                <li>
+                    <h4>[attribute$="value"]:</h4>
+                    <p> This selector is used to select elements with the specified attribute, whose value ends with the specified value.</p>
+                    <h5>Example:</h5>
+                    <p class="text">Class name ---> text</p>
+                    <p class="text-2">Class name ---> text-2</p>
+                    <p class="three-text">Class name ---> third-text</p>
+                    <p>Explanation:<em> The value does not has to be a whole word but ends with the word 'text'.</em></p>
+                </li><hr style="width: 30%;">
+
+                <h4>[attribute*="value"]:</h4>
+                    <p> This selector is used to select elements whose attribute value contains a specified value.</p>
+                    <h5>Example:</h5>
+                    <p class="paragraph_I">Class name ---> paragraph_I</p>
+                    <p class="paragraph_II">Class name ---> paragraph_II</p>
+                    <p class="paragraph_III">Class name ---> paragraph_III</p>
+                    <p>Explanation:<em> The value does not has to be a whole word but it should contains the word '_I'.</em></p>
+                </li><hr style="width: 30%;">
+            </ol>
+        </li>
+
+        <li>
+            <h4>'input' tag attribute selector:</h4>
+            <p>Syntax: input[attribute="value"]</p>
+            <h5>Example:</h5>
+            <form>
+                Firstname:<input type="text" name="Name" value="Selva" size="20">
+                <input type="button" value="Button">
+            </form>
+            <p>Explanation:<em> Applying styles for input controls.</em></p>
+        </li>
+        
+      </ul>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+html{
+    font-size: 16px;
+}
+.pixel{
+    font-size: 20px;
+}
+.point{
+    font-size: 20pt;
+}
+.picas{
+    font-size: 2pc;
+}
+.dummy{
+    font-size: 16px;
+}
+.em_p{
+    font-size: 2em;
+    line-height: 2em;
+}
+.em_div{
+    font-size: 30px;
+    border: 1px solid black;
+    line-height: 2em;
+    padding: 1em;
+}
+.em_span{
+    font-size: 0.5em;
+    line-height: 1em;  
+}

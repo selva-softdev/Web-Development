@@ -1,0 +1,29 @@
+.flex-container{
+    display: flex;
+    width: 30%;
+    height: 150px;
+    background-color: lightblue;
+}
+.flex-items{
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+.flex-start{
+    align-items: flex-start;
+}
+.flex-end{
+    align-items: flex-end;
+}
+.center{
+    align-items: center;
+}
+.stretch{
+    align-items: stretch;
+}
+.baseline{
+    align-items: baseline;
+}
+.align-self{
+    align-self:center;
+}

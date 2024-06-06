@@ -1,0 +1,94 @@
+caption, table, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.flex-container-row{
+    display:flex; 
+    flex-direction: row;
+    border: 1px solid lightgreen;
+}
+
+.flex-container-row > div{
+    margin:10px;
+    padding: 20px;
+    width: 100px;
+}
+
+.flex-container-rowrev{
+    display:flex; 
+    flex-direction: row-reverse;
+    border: 1px solid lightgreen;
+}
+
+.flex-container-rowrev > div{
+    margin:10px;
+    padding: 20px;
+    width: 100px;
+}
+
+.flex-container-col{
+    display:flex; 
+    flex-direction: column;
+    border: 1px solid lightgreen;
+}
+
+.flex-container-col > div{
+    margin:10px;
+    padding: 20px;
+    width: 100px;
+}
+
+.flex-container-colrev{
+    display:flex; 
+    flex-direction: column-reverse;
+    border: 1px solid lightgreen;
+}
+
+.flex-container-colrev > div{
+    margin:10px;
+    padding: 20px;
+    width: 100px;
+}
+
+.flex-container-wrap{
+    display:flex; 
+    flex-direction: row;
+    flex-wrap:wrap;
+    border: 1px solid rgb(83, 188, 188);
+    width:20%;
+}
+
+.flex-container-wrap > div{
+    margin:10px;
+    padding: 20px;
+    width: 100px;
+}
+
+.flex-container-nowrap{
+    display:flex; 
+    flex-direction: row;
+    flex-wrap:nowrap;
+    border: 1px solid rgb(83, 188, 188);
+    width:20%;
+}
+
+.flex-container-nowrap > div{
+    margin:10px;
+    padding: 20px;
+    width: 100px;
+}
+
+.flex-container-wraprev{
+    display:flex; 
+    flex-direction: row;
+    flex-wrap:wrap-reverse;
+    border: 1px solid rgb(83, 188, 188);
+    width:20%;
+}
+
+.flex-container-wraprev > div{
+    margin:10px;
+    padding: 20px;
+    width: 100px;
+}

@@ -1,0 +1,15 @@
+.main_div{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 30%;
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    background-color: rgb(103, 177, 211);
+}
+.button{
+    margin-top: 5%;
+}
+.result{
+    margin-top: 5%;
+}

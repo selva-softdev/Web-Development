@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday Task</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- -------- Task ---------
+        Box Modal(content area, padding, border and margin)
+        Box-sizing
+        Background properties
+        Font Stack 
+    -->
+
+    <div class="box">
+        <h1 style="text-align: center;">Box Modal</h1>
+        <ul>
+            <li>Content area</li>
+            <li>Padding(TRBL) area</li>
+            <li>Border(TRBL) area</li>
+            <li>Margin(TRBL) area</li>
+        </ul>
+    </div><br>
+    <hr>
+
+    <h2>Box-sizing property:</h2>
+    <p>By default, the width and height of an element is calculated like this:</p>
+    <ul>
+        <li>width + padding + border = actual width of an element</li>
+        <li>height + padding + border = actual height of an element</li>
+    </ul>
+    <h3>Syntax: box-sizing = border-box</h3>
+    <p>The box-sizing property allows us to include the padding and border in an element's total width and height.</p>
+    <p>If you set box-sizing: border-box; on an element, padding and border are included in the width and height:</p>
+    <div class="flex-container">
+        <div class="without-box-sizing">
+            <h3 style="text-align: center;">Without box-sizing</h3>
+            <div class="div1">Div without padding</div>
+            <div class="div2">Div with padding</div>
+        </div>
+        <div class="with-box-sizing">
+            <h3 style="text-align: center;">With box-sizing</h3>
+            <div class="div3">Div without padding</div>
+            <div class="div4">Div with padding</div>
+        </div>
+    </div>    
+        
+
+    <h2>Background Properties:</h2>
+    <ol>
+        <li>
+            <h3>Background color:</h3>
+            <p style="background-color: aqua;width: 35%;">Background color without opacity.</p>
+            <p style="background-color: aqua; opacity:0.6;width: 35%;">Background color with opacity.</p>
+        </li>
+        <li>
+            <h3>Background image:</h3>
+            <div class="bg_url">
+                <p>Background image using url.</p>
+            </div>
+        </li>
+        <li>
+            <h3>Background image with color gradient:</h3>
+            <div class="bg_gradient">
+                <p>Background image using gradient color.</p>
+            </div>
+        </li>
+        <li>
+            <h3>Background repeat:</h3>
+            <div class="bg_repeat">
+                <p>Background repeat.</p>
+            </div>
+        </li>
+    </ol><br>
+    <hr>
+
+    <h2>Font Stack:</h2>
+    <p id="font_p">Font style: Jacquard 24</p>
+</body>
+</html>

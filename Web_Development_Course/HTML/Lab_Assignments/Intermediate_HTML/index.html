@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate HTML</title>
+    <style>
+        table,th,td{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td>
+                    <h1>Macbook Air</h1>
+                    <h4>Best Laptop ever</h4>
+                </td>
+                <td>
+                    <img src="https://s3.amazonaws.com/grey_campus/production/system/OdinSchool/2023/Laptop.png" alt="Macbook Air" width="300px">
+                </td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <section id="About-Macbook-air">
+            <h3>About Macbook Air</h3>
+            <p>MacBook Air is strikingly thin and brings exceptional speed and power efficiency within its durable all-aluminium enclosure. 
+               It's the ultra-fast, ultra-capable laptop that lets you work, play or create just about anything - anywhere.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Model</th>
+                        <th>RAM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td rowspan="2">Macbook Air M1</td>
+                        <td>8 GB</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>16 GB</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td rowspan="3">Macbook Air M2</td>
+                        <td>8 GB</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>16 GB</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>24 GB</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="Buy-now">
+            <h3>Buy Now</h3>
+            <form>
+                <fieldset>
+                    <legend>Product Details</legend>
+                    <label for="product-name">Product Name</label>
+                    <select>
+                        <optgroup label="Macbook Air M1">
+                            <option value="8 GB">8 GB</option>
+                            <option value="16 GB">16 GB</option>
+                        </optgroup>
+                        <optgroup label="Macbook Air M2">
+                            <option value="8 GB">8 GB</option>
+                            <option value="16 GB">16 GB</option>
+                            <option value="24 GB">24 GB</option>
+                        </optgroup>
+                    </select><br><br>
+
+                    <label for="quantity">Quantities</label>
+                    <input type="number" name="quantity">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="full-name"><br><br>
+
+                    <label for="age">Age</label>
+                    <input type="number" name="age"><br><br>
+
+                    <h4>Gender</h4>
+                    <input type="radio" name="gender" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="gender" value="Female">
+                    <label for="Female">Female</label>
+                    <input type="radio" name="gender" value="Other">
+                    <label for="Other">Other</label>
+                </fieldset>
+
+                <br>
+                <input type="Submit">
+                <input type="Reset">
+            </form>
+        </section>
+    </main>
+    <br><br><hr>
+    <footer>
+        <p><em>&copy; Copyright, 2013 OdinSchool</em></p>
+    </footer>
+</body>
+</html>

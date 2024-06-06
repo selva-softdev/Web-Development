@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Display Properties</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- ----------Task-----------
+        HTML elements with display property "Inline" and "Block"
+        Display "Flex" property with "Flex-direction" and "Flex-wrap". 
+    -->
+
+    <h1>Display Properties:</h1>
+    <ol>
+        <li>
+            <h2>Inline:</h2>
+            <div>
+                <ul>
+                    <li>An inline element does not start on a new line.</li>
+                    <li>An inline element only takes up as much width as necessary.</li>
+                    <li>Width and height cannot be resized. ie,it takes only needed content space.</li>
+                    <li>Content displayed in <strong>row</strong>.</li>
+                </ul><br>
+                <table>
+                    <caption><strong>Inline Elements in HTML</strong></caption>
+                    <tr>
+                        <td>big</td>
+                        <td>small</td>
+                        <td>b</td>
+                        <td>strong</td>
+                        <td>i</td>
+                        <td>em</td>
+                        <td>q</td>
+                    </tr>
+                    <tr>
+                        <td>object</td>
+                        <td>sub</td>
+                        <td>sup</td>
+                        <td>code</td>
+                        <td>kbd</td>
+                        <td>cite</td>
+                        <td>time</td>
+                    </tr>
+                    <tr>
+                        <td>input</td>
+                        <td>output</td>
+                        <td>button</td>
+                        <td>select</td>
+                        <td>textarea</td>
+                        <td>label</td>
+                        <td>br</td>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>img</td>
+                        <td>map</td>
+                        <td>span</td>
+                        <td>abbr</td>
+                        <td>acronym</td>
+                        <td>script</td>
+                    </tr>
+                </table>
+                <h3>Example:</h3>
+                <span style="display:inline; border: 1px solid black">Text inside "Span-1"</span> 
+                <span style="display:inline; border: 1px solid black">Text inside "Span-2"</span> 
+            </div>
+        </li>
+
+        <li>
+            <h2>Block:</h2>
+            <div>
+                <ul>
+                    <li>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.</li>
+                    <li>It will take up the full width</li>
+                    <li>Content displayed in <strong>column</strong>.</li>
+                </ul><br>
+                <table>
+                    <caption><strong>Block Elements in HTML</strong></caption>
+                    <tr>
+                        <td>article</td>
+                        <td>aside</td>
+                        <td>header</td>
+                        <td>footer</td>
+                        <td>main</td>
+                        <td>address</td>
+                        <td>h1 to h6</td>
+                    </tr>
+                    <tr>
+                        <td>div</td>
+                        <td>section</td>
+                        <td>p</td>
+                        <td>pre</td>
+                        <td>ol</td>
+                        <td>ul</td>
+                        <td>li</td>
+                    </tr>
+                    <tr>
+                        <td>table</td>
+                        <td>tfoot</td>
+                        <td>fieldset</td>
+                        <td>figure</td>
+                        <td>figcaption</td>
+                        <td>hr</td>
+                        <td>video</td>
+                    </tr>
+                    <tr>
+                        <td>dd</td>
+                        <td>dl</td>
+                        <td>dt</td>
+                        <td>video</td>
+                        <td>nav</td>
+                        <td>canvas</td>
+                        <td>blockquote</td>
+                    </tr>
+                </table>
+                <h3>Example:</h3>
+                <p style="display:block; border: 1px solid black">Text in "P-1"</p>
+                <p style="display:block; border: 1px solid black">Text in "P-2"</p>
+
+            </div>
+        </li>
+
+        <li>
+            <h2>Inline-Block:</h2>
+            <ul>
+                <li>Displays an element as an inline-level block container.</li>
+                <li>The element itself is formatted as an inline element but <strong>height</strong> and <strong>width</strong> values can be applied.</li>
+            </ul>
+            <h3>Example:</h3>
+            <span style="display:inline-block; border: 1px solid black; width: 200px; height: 50px; margin:10px">Text inside "Span-1"</span> 
+            <span style="display:inline-block; border: 1px solid black; width: 200px; height: 50px;">Text inside "Span-2"</span> 
+        </li>
+
+        <li>
+            <h2>Flex:</h2>
+            <ul>
+                <li>A parent element must have the <strong>display property</strong> set to <strong>flex</strong>.</li>
+                <li>Direct child elements(s) of the flexible container automatically becomes flexible items.</li>
+            </ul><br>
+            <h3>Flex Direction:</h3>
+            <p>Used to format the flex items.</p>
+            <p>Default value: "Row".</p>
+            <h4>Flex Direction:"Row"</h4>
+            <div class="flex-container-row">
+                <div style="background-color:khaki;">Flex direction</div>
+                <div style="background-color:pink;">Set to</div>
+                <div style="background-color:lightgrey;">Row</div>  
+            </div><br>
+
+            <h4>Flex Direction:"Row Reverse"</h4>
+            <div class="flex-container-rowrev">
+                <div style="background-color:khaki;">Flex direction</div>
+                <div style="background-color:pink;">Set to</div>
+                <div style="background-color:lightgrey;">Row Reverse</div>  
+            </div><br>
+
+            <h4>Flex Direction:"Column"</h4>
+            <div class="flex-container-col">
+                <div style="background-color:khaki;">Flex direction</div>
+                <div style="background-color:pink;">Set to</div>
+                <div style="background-color:lightgrey;">Column</div>  
+            </div><br>
+
+            <h4>Flex Direction:"Column Reverse"</h4>
+            <div class="flex-container-colrev">
+                <div style="background-color:khaki;">Flex direction</div>
+                <div style="background-color:pink;">Set to</div>
+                <div style="background-color:lightgrey;">Column Reverse</div>  
+            </div><br>
+
+            <h3>Flex Wrap:</h3>
+            <p>Used to wrap the flex items to next line automatically.</p>
+            <h4>Flex Wrap:"Wrap"</h4>
+            <div class="flex-container-wrap"> 
+                <div style="background-color:rgb(130, 228, 224);">Flex wrap</div>
+                <div style="background-color:rgb(180, 180, 61);">Set to</div>
+                <div style="background-color:lightslategrey;">Wrap</div> 
+            </div><br>
+
+            <h4>Flex Wrap:"No Wrap"</h4>
+            <div class="flex-container-nowrap"> 
+                <div style="background-color:rgb(130, 228, 224);">Flex wrap</div>
+                <div style="background-color:rgb(180, 180, 61);">Set to</div>
+                <div style="background-color:lightslategrey;">No Wrap</div> 
+            </div><br>
+
+            <h4>Flex Wrap:"Wrap Reverse"</h4>
+            <div class="flex-container-wraprev"> 
+                <div style="background-color:rgb(130, 228, 224);">Flex wrap</div>
+                <div style="background-color:rgb(180, 180, 61);">Set to</div>
+                <div style="background-color:lightslategrey;">Wrap Reverse</div> 
+            </div><br>
+        </li>
+    </ol>
+
+</html>

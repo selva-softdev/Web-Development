@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors and Units</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Colors:</h1>
+    <ol>
+        <li>
+            <h3>Giving color name</h3>
+            <h4>Example:</h4>
+            <p style="color:red"> color:red;</p>
+        </li>
+        <li>
+            <h3>RGB(Red, Green, Blue)</h3>
+            <p>Value Range: 0 to 255</p>
+            <p>Syntax: rgb(0,0,0)</p>
+            <h4>Example:</h4>
+            <p style="color:rgb(0,255,0)">color:rgb(0,255,0)</p>
+        </li>
+        <li>
+            <h3>RGBA(Red, Green, Blue,Opacity)</h3>
+            <p>Opacity Range: 0.1 to 1.0</p>
+            <p>Syntax: rgb(0,0,0,0)</p>
+            <h4>Example:</h4>
+            <p style="color:rgba(0,0,255,0.5)">color:rgb(0,0,255,0.5)</p>
+        </li>
+        <li>
+            <h3>Hex value(#RRGGBB)</h3>
+            <p>Value Range: 00 to FF</p>
+            <p>Syntax: #000000 or #000</p>
+            <h4>Example:</h4>
+            <p style="color: #00F0DA;">color:#00F0DA</p>
+        </li>
+    </ol><hr>
+
+    <h1>Units:</h1>
+    <h2>Absolute Lengths:</h2>
+    <ol>
+        <li>
+            <h3>px(pixel):</h3>
+            <p>1px = 1/96th of 1inch</p>
+            <h4>Example:</h4>
+            <p class="pixel">Text with unit of "px".</p>
+        </li>
+        <li>
+            <h3>pt(point):</h3>
+            <p>1pt = 1/72 of 1inch</p>
+            <h4>Example:</h4>
+            <p class="point">Text with unit of "pt".</p>
+        </li>
+        <li>
+            <h3>pc(picas):</h3>
+            <p>1pc = 12 px</p>
+            <h4>Example:</h4>
+            <p class="picas">Text with unit of "pc".</p>
+        </li>
+    </ol><hr>
+
+    <h2>Relative Lengths:</h2>
+    <ol>
+        <li>
+            <h3>em:</h3>
+            <p>By default 1em = 16px</p>
+            <p>Relative to the font-size of the element 
+                (2em means 2 times the current font-size)
+            </p>
+            <h4>Example:</h4>
+            <p class="em_p">These paragraphs have calculated as:
+                <br><em>font-size is: 16px(default) * 2em = 32px.</em>
+                <br><em>line-height is: 32px(2em(16*2) of its parent(p tag) font-size) * 2em = 64px.</em>
+            </p>
+            <div class="em_div">These div have calculated as:
+                <br><em>font-size is: 30px. (Because unit of this font-size is "px". So no need to look for parent.)</em>
+                <br><em>line-height is: 30px(30px of its parent(div tag) font-size) * 2em = 60px.</em>
+                <span class="em_span">These span inside div calculated as:
+                    <br><em>font-size is: 30px(Because font-size of this parent div is 30px) * 0.5em = 15px</em>
+                    <br><em>line-height is: 30px(30px of its parent(span tag) font-size) * 1em = 15px.</em>
+                </span>
+            </div>
+        </li>
+        <li>
+            <h3>rem:</h3>
+            <p>Relative to font-size of the root element</p>
+            <h4>Example:</h4>
+            <p style="font-size: 0.5em;">Font-size: 16px(root element's "html") font-size * 0.5rem = 8px</p>
+            <p style="font-size: 1em;">Font-size: 16px(root element's "html") font-size * 1rem = 16px</p>
+            <p style="font-size: 1.5em;">Font-size: 16px(root element's "html") font-size * 1.5rem = 24px</p>
+        </li>
+    </ol>
+
+</body>
+</html>

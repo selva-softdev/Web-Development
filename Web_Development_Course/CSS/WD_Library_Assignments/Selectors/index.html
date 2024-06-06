@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Selectors:</h1>
+    <pre>Types of Selectors:</pre>
+    <ul style="list-style: none;">
+        <li>
+            <h2>Element selector:</h2>
+            <p>It applies style for all related element in HTML webpage.</p>
+            <h3>Example</h3>
+            <pre>Text color will be "indigo" for all "pre" tag content in this webpage.</pre>
+        </li><hr>
+
+        <li>
+            <h2>Class selector:</h2>
+            <ol>
+                <li><p>It apply styles only for those elements that used this "class name"</p></li>
+                <li><p>A class name can be used in multiple elements.</p></li>
+                <li><p>More than one classname can be used in same element.</p></li>
+                <li><p>Syntax: .Class_name{}</p></li>
+            </ol>
+            <h3>Example</h3>
+            <em class="class1">Text with "one" class styles applied.(ie.class1-->color)</em><br>
+            <em class="class1 class2">Text with "two" class styles applied.(ie.class1-->color & class2-->font-size)</em>
+        </li><hr>
+
+        <li>
+            <h2>ID selector:</h2>
+            <ol>
+                <li><p>Id should be unique and used in an individual element.</p></li>
+                <li><p>Id should not be repeated</p></li>
+                <li><p>An element should not have 2 id's.</p></li>
+                <li><p>Syntax: #ID_name{}</p></li>
+            </ol>
+            <h3>Example</h3>
+            <em id="id">Text with ID style applied.</em>
+        </li><hr>
+
+        <li>
+            <h2>Grouping selector:</h2>
+            <ol>
+                <li><p>Grouping two or more elements, class or id styles.</p></li>
+                <li><p>Syntax: Separated by ','</p></li>
+            </ol>
+            <h3>Example</h3>
+            <a class="link1" href="#">Link 1</a>
+            <a class="link2" href="#">Link 2</a>
+        </li><hr>
+
+        <li>
+            <h2>Decendant selector:</h2>
+            <ol>
+                <li><p>Apply styles for Parent-Child.</p></li>
+                <li><p>Syntax: Separated by ' '(space).</p></li>
+            </ol>
+            <h3>Example</h3>
+            <div>
+                <p>H1 inside div</p>
+                <h5>H2 inside div</h5>
+            </div>
+        </li><hr>  
+        
+        <li class="pseudo">
+            <h2>Pseudo selector:</h2>
+            <ol>
+                <li><p>A tag order: Love HA --> Link, visited, Hover, Active.</p></li>
+                <li><p>Syntax: Tagname followed by ':' properties{}.</p></li>
+            </ol>
+            <h3>Example</h3>
+            <a href="http://www.google.com" target="_blank">Open Google</a>
+        </li><hr> 
+    </ul>
+
+    <h2>Examples using pseudo properties:</h2>
+    <div>
+        <p>Result of <strong>p:first-child</strong>: First line of text.</p>
+        <p>Result of <strong>p:nth-child(even)</strong>: Second line of text.</p>
+        <p>Result of <strong>p:nth-of-type(3)</strong>: Third line of text.</p>
+        <p>Result of <strong>p:nth-child(even)</strong>: Fourth line of text.</p>
+        <p>Result of <strong>p:last-child</strong>: Fifth line of text.</p>
+    </div><hr>
+</body>
+</html>

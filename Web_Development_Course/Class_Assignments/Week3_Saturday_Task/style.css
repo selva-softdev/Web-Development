@@ -1,0 +1,10 @@
+
+.addtext::before{
+    content: "Hi Selvasundari!! ";
+    color:rgb(196, 26, 128);
+}
+
+.addtext::after{
+    content: " to WD Course Bootcamp.";
+    color: rgb(116, 151, 10);
+}

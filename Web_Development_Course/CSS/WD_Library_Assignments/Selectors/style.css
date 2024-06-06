@@ -1,0 +1,65 @@
+pre{
+    color: indigo;
+}
+
+.class1{
+    color:darkcyan
+}
+
+.class2{
+    font-size: 20px;
+}
+
+#id{
+    border: 4px dotted lightcoral;
+}
+
+.link1, .link2{
+    color: burlywood;
+}
+
+div h5{
+    color: chocolate;
+}
+
+div p{
+    color:violet
+}
+
+.pseudo a{
+    text-decoration: none;
+}
+
+a:link{
+    color:rgb(14, 117, 64);
+}
+
+a:visited{
+    color:red;
+}
+
+a:hover{
+    background-color: rgb(14, 117, 64);
+    padding: 10px;
+    color: white;
+}
+
+a:active{
+    color: yellow;
+}
+
+div p:first-child{
+    color: rgb(14, 119, 9);
+}
+
+div p:last-child{
+    color: rgb(204, 154, 15);
+}
+
+div p:nth-of-type(3){
+    color: rgb(22, 147, 189);
+}
+
+div p:nth-child(even){
+    color: rgb(112, 10, 125);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-Align Items</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Points to be remember:</h1>
+    <ul>
+        <li>when you set the direction to a reversed row or column, justify content-start and end are also reversed.
+            <h3>Example:</h3>
+            <p>flex-direction:row-reverse;<br>
+                justify-content:flex-end
+            </p>
+        </li>
+        <li>when the flex direction is a column, justify-content changes to the vertical and align-items to the horizontal.
+            <h3>Example:</h3>
+            <p>flex-direction:column;
+                justify-content:flex-end
+            </p>
+        </li>
+        <li>The align-content determines the spacing between lines, while align-items determines how the items as a whole are aligned within the container. <br>
+            When there is only one line, align-content has no effect.
+        </li>
+    </ul>
+
+
+
+    <h1>Display Flex property - Align Items:</h1>
+    <ul>
+        <li><p>The align-items property specifies the default <strong>alignment</strong> for items inside a flexbox or grid container.</p></li>
+        <li><p>In a flexbox container, the flexbox items are aligned on the <strong>cross axis(y-axis)</strong>, which is <strong>vertical</strong> by default.</p></li>
+        <li>Default: <strong>Stretch</strong></li>
+    </ul>
+
+    <h2>Align item: "Stretch"</h2>
+    <p>Items are <strong>stretched to fit</strong> the container.</p>
+    <h3>Example:</h3>
+    <div class="flex-container stretch">
+        <div class="flex-items" style="background-color: lightpink;">Item 1</div>
+        <div class="flex-items" style="background-color: lightyellow;">Item 2</div>
+        <div class="flex-items" style="background-color: lightgreen;">Item 3</div>
+    </div><br>
+
+    <h2>Align item: "Flex-start"</h2>
+    <p>Items are positioned at the <strong>beginning</strong> of the container.</p>
+    <h3>Example:</h3>
+    <div class="flex-container flex-start">
+        <div class="flex-items" style="background-color: lightpink;">Item 1</div>
+        <div class="flex-items" style="background-color: lightyellow;">Item 2</div>
+        <div class="flex-items" style="background-color: lightgreen;">Item 3</div>
+    </div><br>
+
+    <h2>Align item: "Flex-end"</h2>
+    <p>Items are positioned at the <strong>end</strong> of the container.</p>
+    <h3>Example:</h3>
+    <div class="flex-container flex-end">
+        <div class="flex-items" style="background-color: lightpink;">Item 1</div>
+        <div class="flex-items" style="background-color: lightyellow;">Item 2</div>
+        <div class="flex-items" style="background-color: lightgreen;">Item 3</div>
+    </div><br>
+
+    <h2>Align item: "Center"</h2>
+    <p>Items are positioned at the <strong>center</strong> of the container.</p>
+    <h3>Example:</h3>
+    <div class="flex-container center">
+        <div class="flex-items" style="background-color: lightpink;">Item 1</div>
+        <div class="flex-items" style="background-color: lightyellow;">Item 2</div>
+        <div class="flex-items" style="background-color: lightgreen;">Item 3</div>
+    </div><br>
+
+    <h2>Align item: "Baseline"</h2>
+    <p>Items are positioned at the <strong>baseline</strong> of the container.</p>
+    <h3>Example:</h3>
+    <div class="flex-container baseline" style="width: 50%;">
+        <div class="flex-items" style="background-color: lightpink; width: auto;"><h2>Lorem ipsum dolor sit amet.</h2></div>
+        <div class="flex-items" style="background-color: lightyellow; width: auto;">Lorem ipsum dolor sit amet.</div>
+        <div class="flex-items" style="background-color: lightgreen; width: auto;"><h3>Lorem ipsum dolor sit amet.</h3></div>
+    </div><br>
+
+    <h2>Align self:</h2>
+    <ul>
+        <li><p>The align-self property <strong>specifies the alignment</strong> for the <strong>selected item vertically(y-axis)</strong> inside a flexbox container.</p></li>
+        <li>
+            <p>Align-self values:</p>
+            <ul>
+                <li>Stretch</li>
+                <li>Flex-start</li>
+                <li>Flex-end</li>
+                <li>Center</li>
+                <li>Baseline</li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Example:</h3>
+    <div class="flex-container flex-start ">
+        <div class="flex-items" style="background-color: lightpink;">Item 1</div>
+        <div class="flex-items align-self" style="background-color: lightyellow;">Item 2</div>
+        <div class="flex-items" style="background-color: lightgreen;">Item 3</div>
+    </div><br>
+</body>
+</html>

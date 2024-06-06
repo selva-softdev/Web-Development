@@ -1,0 +1,76 @@
+
+string1= 'Jai'  (index - 012)
+string2= 'Shri Rama'  (index - 0123 4 5678)
+
+Functions                   -----  Results
+
+string1 + string2                  JaiShri Rama
+string1.concat(string2)            JaiShri Rama
+string1.concat(' ',string2)        Jai Shri Rama
+
+string2.slice(start_index,end)                 
+string2.slice(5,8)                 Rama
+string2.slice(5)                   Rama
+
+string2.substring(start_index,end)
+string2.substring(5,8)             Rama
+
+string2.substr(start_index,length)
+string2.substr(0,8)                Shri Ram
+
+string1.charAt(1)                  a
+string1.charCodeAt(1)              97
+
+string1.length                     3
+
+string1.endsWith('i')            true
+string1.startsWith('a')          false
+string1.includes('Ram')          false
+
+string2.indexOf('a')             6
+string2.lastIndexOf('a')         8
+
+string2.padEnd(9,'a')            Shri Ramaa
+string2.padStart(9,'^')          ^Shri Rama
+
+string1.repeat(3)                JaiJaiJai
+
+string2.replace('Rama','Ram')    Shri Ram
+
+string2.search('Ram')            5
+string2.search('ram')            -1
+
+eg:string2 = 'Shri Rama '
+string2.split('a',1)             ['Shri R']
+string2.split('a',2)             ['Shri R','m']
+string2.split('a',3)             ['Shri R','m',' ']
+
+string1.toLowerCase()            jai
+string1.toUpperCase()            JAI
+
+eg:string2 = '  Shri  Rama  '
+string2.trim()                   'Shri  Ram'
+string2.trimStart()              'Shri  Ram  '
+string2.trimLeft()               'Shri  Ram  '
+string2.trimEnd()                '  Shri  Ram'
+string2.trimLeft()               '  Shri  Ram'
+
+
+example
+Display random characters in a given string1 (Jai)
+
+string1.charAt(Math.floor(Math.random()*string1.length))
+
+Result:
+J
+J
+i
+a
+i
+J
+
+
+
+
+
+

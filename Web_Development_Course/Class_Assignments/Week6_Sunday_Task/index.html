@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators in JS</title>
+</head>
+<body>
+<h2>Variable</h2>
+    <p>Creating a variable in JavaScript is called "declaring" a variable.</p>
+    <p>Variables are Containers for Storing Data</p>
+    <p>variables must be identified with unique names.    
+        These unique names are called identifiers.
+        After the declaration, the variable has no value (technically it is undefined).
+        You can declare many variables in one statement.
+    </p>
+    <p>
+        The general rules for declaring names for variables (unique identifiers) are:
+
+            Names can contain letters, digits, underscores, and dollar signs.
+            Names must begin with a letter.
+            Names can also begin with $ and _
+            Names are case sensitive (y and Y are different variables).
+            Reserved words (like JavaScript keywords) cannot be used as names.
+            Variables declared inside a { } block cannot be accessed from outside the block:
+            Variables declared with the var always have Global Scope.
+    </p>
+    <p>
+        JavaScript Variables can be declared in 4 ways:<br>
+        Automatically<br>
+        Using var<br>
+        Using let<br>
+        Using const
+    </p>
+    Always use const if the value should not be changed
+    let and const cannot be Redeclared, var can be redeclared.
+    <p>
+
+    </p>
+    <h3>Example:</h3>
+    number1;<br>
+    var number1<br>
+    let number1<br>
+    const number1=5<br>
+    let person = "John Doe", carName = "Volvo", price = 200;
+
+    <h3>Const</h3>
+    <p>Because of this you can NOT:
+
+        Reassign a constant value
+        Reassign a constant array
+        Reassign a constant object
+        But you CAN:
+        
+        Change the elements of constant array
+        Change the properties of constant object</p>
+
+        Constant Arrays:
+        -----------------
+        // You can create a constant array:
+        const cars = ["Saab", "Volvo", "BMW"];
+
+        // You can change an element:
+        cars[0] = "Toyota";
+
+        // You can add an element:
+        cars.push("Audi");
+
+        Constant Objects
+        -----------------
+        // You can create a const object:
+        const car = {type:"Fiat", model:"500", color:"white"};
+
+        // You can change a property:
+        car.color = "red";
+
+        // You can add a property:
+        car.owner = "Johnson";
+
+
+        <h2>Assignment Operator</h2>
+        <p>In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.</p>
+
+
+        <h2>Datatypes</h2>
+        <p>JavaScript has 8 Datatypes:
+            1. String
+            2. Number
+            3. Bigint
+            4. Boolean
+            5. Undefined
+            6. Null
+            7. Symbol
+            8. Object
+            
+            The Object Datatype:
+            1. An object
+            2. An array
+            3. A date</p>
+
+            // Numbers:
+            let length = 16;
+            let weight = 7.5;
+
+            // Strings:
+            let color = "Yellow";
+            let lastName = "Johnson";
+
+            // Booleans
+            let x = true;
+            let y = false;
+
+            // Object:
+            const person = {firstName:"John", lastName:"Doe"};
+
+            // Array object:
+            const cars = ["Saab", "Volvo", "BMW"];
+
+            // Date object:
+            const date = new Date("2022-03-25");
+
+            <h2>typeof() operator:</h2>
+            <p>The typeof operator returns the type of a variable or an expression</p>
+            typeof "John Doe"     // Returns "string"
+            typeof 314            // Returns "number"
+
+
+            <h2>Operators</h2>
+                The numbers (in an arithmetic operation) are called operands.
+                The operation (to be performed between the two operands) is defined by an operator.
+            <h3>Aritmetic operator</h3>
+            Operator	Description
+            *	        Multiplication
+            **	        Exponentiation (ES2016)
+            -	        Subtraction
+            /	        Division
+            %	        Modulus (Remainder)
+            ++	        Increment
+            --	        Decrement
+            +	        Addition
+
+
+            JavaScript Assignment Operators
+            Assignment operators assign values to JavaScript variables.
+
+            Operator	Example	Same As
+            =	x = y	x = y
+            +=	x += y	x = x + y
+            -=	x -= y	x = x - y
+            *=	x *= y	x = x * y
+            /=	x /= y	x = x / y
+            %=	x %= y	x = x % y
+            **=	x **= y	x = x ** y
+
+            Shift Assignment Operators
+            Operator	Example	Same As
+            <<=	x <<= y	x = x << y
+            >>=	x >>= y	x = x >> y
+            >>>=	x >>>= y	x = x >>> y
+
+            Bitwise Assignment Operators
+            Operator	Example	Same As
+            &=	x &= y	x = x & y
+            ^=	x ^= y	x = x ^ y
+            |=	x |= y	x = x | y
+            
+            Logical Assignment Operators
+            Operator	Example	Same As
+            &&=	x &&= y	x = x && (x = y)
+            ||=	x ||= y	x = x || (x = y)
+            ??=	x ??= y	x = x ?? (x = y)
+
+    <script src="script.js"></script>
+</body>
+</html>
