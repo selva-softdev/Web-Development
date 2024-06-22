@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+    <style>
+        .textcolor{
+            color:crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Concepts covered:</h1>
+    <h3>Call, bind and apply methods</h3>
+    <h3>Inheritance</h3>
+    <h3>BOM, DOM</h3>
+    <hr>
+
+    <h2 id="BOM-heading">BOM(Browser Object Model):</h2>
+    <h2>Window:</h2>
+    <ul>
+        <h3>Window object:</h3>
+        <li>window.document.getElementById('heading') same as document.getElementById('heading')</li>
+
+        <h3>Window size:</h3>
+        <li>window.innerHeight</li>
+        <li>window.innerWidth</li>
+    </ul>
+
+    <h2>Screen:</h2>
+    <ul>
+        <h3>Screen object:</h3>
+        <li>screen.width</li>
+        <li>screen.height</li>
+        <li>screen.availWidth</li>
+        <li>screen.availHeight</li>
+        <li>screen.colorDepth</li>
+        <li>screen.pixelDepth</li>
+    </ul>
+
+    <h2>Location:</h2>
+    <ul>
+        <h3>Location object:</h3>
+        <li><strong>location.href:</strong> returns the href (URL) of the current page</li>
+        <li><strong>location.hostname:</strong> returns the domain name of the web host</li>
+        <li><strong>location.pathname:</strong> returns the path and filename of the current page</li>
+        <li><strong>location.protocol :</strong> returns the web protocol used (http: or https:)</li>
+        <li><strong>location.assign:</strong> loads a new document</li>
+    </ul>
+
+    <h2>Popup alert:</h2>
+    <ul>
+        <li>alert('Popup will open!')</li>
+    </ul>
+
+    <h2>Navigator:</h2>
+    <ul>
+        <li><strong>navigator.cookieEnabled:</strong>returns true if cookies are enabled, otherwise false:</li>
+        <li><strong>navigator.appName:</strong>returns the application name of the browser</li>
+        <li><strong>navigator.appCodeName:</strong>returns the application code name of the browser</li>
+        <li><strong>navigator.appCodeName:</strong>returns the application code name of the browser</li>
+        <li><strong>navigator.product:</strong>returns the product name of the browser engine</li>
+        <li><strong>navigator.appVersion:</strong>returns version information about the browser</li>
+    </ul>
+    <hr>
+
+    <h1>DOM:</h1>
+    <!-- Finding HTML Elements: -->
+    <p id="getId">Get element by id</p>
+    <span>Get element by tag name</span>
+    <p class="getClass">Get element by class name</p>
+
+    <!-- Changing content of HTML Elements: -->
+    <h3 id="innerHTML">Inner HTML</h3>
+
+    <!-- Set attribute: -->
+    <h3 id="setAttr">Set Attribute</h3>
+
+    <!-- Get attribute and Has attribute: -->
+    <h3 id="getAttr"></h3>
+    <h3 id="hasAttr"></h3>
+    <a id="anchor" href="www.google.com" target="_blank">Go to Google</a><br>
+    
+    <!-- Remove attribute and set, remove attribute node: -->
+    <a id="removeAttr" href="https://www.w3schools.com">Go to w3schools</a>
+    
+    <!-- Has attributes: -->
+    <h3 id="hasAttrs"></h3>
+    
+    <!-- Get attribute node: -->
+    <h3 id="getAttrName"></h3>
+
+    <!-- Set style: -->
+    <h3 id="setStyle">Set style</h3>
+
+    <!-- Create element and append as child: -->
+    <div id="appendChild" style="padding:16px;background-color:rgb(87, 214, 208)">
+        <h3 id="firstChild">First child</h3> 
+    </div>
+
+    <!-- Remove child: -->
+    <ul id="list">
+        <li>Manali</li>
+        <li id="item2">Kashmir</li>
+        <li>Luxeglamb</li>
+        <li id="item4">Varkala</li>
+        <li id="item5">Goa</li>
+        <li id="item6">Thailand</li>
+    </ul>
+
+    <!-- Get First child: -->
+    <h3 id="firstKid"></h3>
+
+    <!-- Get Last child: -->
+    <h3 id="lastKid"></h3>
+
+    <script src="script.js"></script>
+</body>
+</html>
